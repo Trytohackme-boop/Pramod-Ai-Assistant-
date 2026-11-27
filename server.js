@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 app.use(express.json({ limit: "1mb" }));
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(__dirname));
 
 const SYSTEM = "You are PRAMOD AI, a helpful personal assistant. Reply in the same language the user writes (Nepali, English or Japanese). Be clear and concise.";
 
